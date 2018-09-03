@@ -262,3 +262,9 @@ NSArray *array=[MRModel MR_findByAttribute:@"id" withValue:[NSNumber numberWithI
     }];
 ```
 
+***
+
+
+[简书](https://www.jianshu.com/u/3d71bdb43dc7)
+[blog](https://michengxian.github.io)
+
