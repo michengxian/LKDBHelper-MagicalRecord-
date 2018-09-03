@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKDBViewController">
+            <connections>
+                <outlet property="addButton" destination="SXf-Ft-8GD" id="gbb-9C-hAM"/>
+                <outlet property="changeButton" destination="gU6-ht-4DQ" id="wz4-Vu-Ybr"/>
+                <outlet property="deleteButton" destination="T9U-gB-OEb" id="ZAA-ef-L8j"/>
+                <outlet property="searchButton" destination="Q1v-XL-Zp2" id="Bsg-KE-53x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXf-Ft-8GD">
+                    <rect key="frame" x="20" y="120" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0qH-Pl-Sky"/>
+                        <constraint firstAttribute="width" constant="100" id="M6b-uB-7E2"/>
+                    </constraints>
+                    <state key="normal" title="增"/>
+                    <connections>
+                        <action selector="addButtonClick:" destination="-1" eventType="touchUpInside" id="3Yb-tU-oIr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9U-gB-OEb">
+                    <rect key="frame" x="255" y="120" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0k1-l2-gf3"/>
+                        <constraint firstAttribute="height" constant="50" id="8y5-V2-XOD"/>
+                    </constraints>
+                    <state key="normal" title="删"/>
+                    <connections>
+                        <action selector="deleteButtonClick:" destination="-1" eventType="touchUpInside" id="fKN-QN-IO1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU6-ht-4DQ">
+                    <rect key="frame" x="20" y="220" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="soK-Ni-trh"/>
+                        <constraint firstAttribute="height" constant="50" id="yQ3-Pa-fEO"/>
+                    </constraints>
+                    <state key="normal" title="改"/>
+                    <connections>
+                        <action selector="changeButtonClick:" destination="-1" eventType="touchUpInside" id="DDm-OD-y30"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1v-XL-Zp2">
+                    <rect key="frame" x="255" y="220" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="B9i-S9-oQQ"/>
+                        <constraint firstAttribute="height" constant="50" id="ZXP-s0-Fc4"/>
+                    </constraints>
+                    <state key="normal" title="查"/>
+                    <connections>
+                        <action selector="searchButtonClick:" destination="-1" eventType="touchUpInside" id="0B8-Zr-IaG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SXf-Ft-8GD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="EVB-Sd-k04"/>
+                <constraint firstItem="SXf-Ft-8GD" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="FOD-1t-UpZ"/>
+                <constraint firstItem="Q1v-XL-Zp2" firstAttribute="top" secondItem="T9U-gB-OEb" secondAttribute="bottom" constant="50" id="Ig6-Tz-bbg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Q1v-XL-Zp2" secondAttribute="trailing" constant="20" id="It0-OD-A0M"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="T9U-gB-OEb" secondAttribute="trailing" constant="20" id="NBe-YB-Tbo"/>
+                <constraint firstItem="gU6-ht-4DQ" firstAttribute="top" secondItem="SXf-Ft-8GD" secondAttribute="bottom" constant="50" id="PLD-wW-Lcb"/>
+                <constraint firstItem="gU6-ht-4DQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="RIE-27-tpB"/>
+                <constraint firstItem="T9U-gB-OEb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="aQj-Ta-5Fk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-168" y="58"/>
+        </view>
+    </objects>
+</document>
